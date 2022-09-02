@@ -7,6 +7,8 @@ public class Zombie : MonoBehaviour
     [HideInInspector]
     public float speed;
 
+    public GameObject deathEffect;
+
     private Rigidbody2D myBody;
     // Start is called before the first frame update
     void Awake()
@@ -19,4 +21,6 @@ public class Zombie : MonoBehaviour
     {
         myBody.velocity = new Vector2(speed, myBody.velocity.y);
     }
+
+
 }

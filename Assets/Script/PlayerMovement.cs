@@ -18,9 +18,8 @@ public class PlayerMovement : MonoBehaviour
     private string ENEMY_TAG = "Enemy";
 
     private bool m_FacingRight = true;
-
  
-    private string WALK_ANIMATION = "Walk";
+    //private string WALK_ANIMATION = "Walk";
 
     private enum MovementState { idle, running, jumping, falling }
 
@@ -100,12 +99,6 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag(ENEMY_TAG))
-        {
-            Destroy(gameObject);
-        }
-    }
+    
 }
  

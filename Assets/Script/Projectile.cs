@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
-    public float projectileSpeed;
+    public float projectileSpeed = 20f;
     public GameObject impactEffect;
+    public int damage = 40;
 
     private Rigidbody2D rigidbody;
 
-    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -17,14 +18,14 @@ public class Projectile : MonoBehaviour
         rigidbody.velocity = transform.right * projectileSpeed;
     }
 
-    // Update is called once per frame
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Instantiate(impactEffect, transform.position, Quaternion.identity);
         if (collision.tag == "Enemy")
         {
             Destroy(collision.gameObject);
             Destroy(gameObject);
         }
+
+        
     }
 }

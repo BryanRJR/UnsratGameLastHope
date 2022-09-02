@@ -10,7 +10,9 @@ public class ZombieSpawner : MonoBehaviour
     private GameObject spawnedZombie;
 
     [SerializeField]
-    private Transform leftPos, rightPos;
+    private Transform leftPos;
+    [SerializeField]
+    private Transform rightPos;
 
     private int randomIndex;
     private int randomSide;
@@ -24,7 +26,7 @@ public class ZombieSpawner : MonoBehaviour
     {
         while(true)
         {
-            yield return new WaitForSeconds(Random.Range(1, 5));
+            yield return new WaitForSeconds(Random.Range(10, 50));
 
             randomIndex = Random.Range(0, zombieReference.Length);
             randomSide = Random.Range(0, 2);
