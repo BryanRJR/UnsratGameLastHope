@@ -36,7 +36,7 @@ public class QuizManager : MonoBehaviour
     Quizpanel.SetActive(false);
     GoPanel.SetActive(true);
     ScoreTxt.text = score + "/" + totalQuestions;
-   }
+    }
 
    public void Correct()
    {
@@ -65,7 +65,7 @@ public class QuizManager : MonoBehaviour
         }
     }
    }
-
+   
    void generateQuestion()
    {
     if(QnA.Count > 0)
