@@ -78,7 +78,7 @@ public class waveSpanner : MonoBehaviour
         {
         GameObject randomEnemy = currentWave.typeOfEnemies[Random.Range(0, currentWave.typeOfEnemies.Length)];
         Transform randomPoint = spawnPoints[Random.Range(0, spawnPoints.Length)];
-        randomEnemy.GetComponent<Zombie>().speed = -Random.Range(1, 3);
+        randomEnemy.GetComponent<Zombie>().speed = -Random.Range(1, 10);
     
        
         Instantiate(randomEnemy, randomPoint.position, Quaternion.identity); 
