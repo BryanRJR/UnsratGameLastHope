@@ -44,6 +44,19 @@ public class QuizManager : MonoBehaviour
     QnA.RemoveAt(currentQuestion);
     generateQuestion();
    }
+   
+   public void EndGame()
+   {
+    if(score < 3)
+    {
+     SceneManager.LoadScene("EndGame");
+    }
+    if(score >= 3)
+    {
+       // GameOver();
+        SceneManager.LoadScene("EndGameHappy");
+    }
+   }
 
    public void Wrong()
    {
@@ -78,7 +91,8 @@ public class QuizManager : MonoBehaviour
     else
     {
         Debug.Log("Out of Question");
-        GameOver();
+        //GameOver();
+        EndGame();
     }
     
 

@@ -27,6 +27,8 @@ public class waveSpanner : MonoBehaviour
     private int currentWaveNumber;
     private float nextSpawnTime;
 
+    public AudioSource zombieEffect;
+
     private bool canSpawn = true;
     private bool canAnimate = false;
 
@@ -70,6 +72,7 @@ public class waveSpanner : MonoBehaviour
     {
         currentWaveNumber++;
         canSpawn = true;
+        zombieEffect.Play();
     }
 
     void SpawnWave()

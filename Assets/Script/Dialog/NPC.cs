@@ -43,6 +43,7 @@ public class NPC : MonoBehaviour
          if(dialogText.text == dialog[4])
         {
             puzzleButton.SetActive(true);
+            continueButton.SetActive(false);
         }
 
 

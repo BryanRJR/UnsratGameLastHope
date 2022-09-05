@@ -6,6 +6,7 @@ public class PlayerAttack : MonoBehaviour
 {
     public Transform firePosition;
     public GameObject projectile;
+    public AudioSource fireEffect;
    
 
     // Update is called once per frame
@@ -14,6 +15,7 @@ public class PlayerAttack : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             Instantiate(projectile, firePosition.position, firePosition.rotation);
+            fireEffect.Play();
         }
     }
 }

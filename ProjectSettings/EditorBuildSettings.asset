@@ -20,4 +20,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/EndGame.unity
     guid: 49b83545b84830042a69ebcf51e89e0a
+  - enabled: 1
+    path: Assets/Scenes/CutScene.unity
+    guid: 350ded20f9c4c7649b1a69841ca289d4
+  - enabled: 1
+    path: Assets/Scenes/EndGameHappy.unity
+    guid: 64d1166dc5fa72b48bfbf5c7b5f5df2a
   m_configObjects: {}
