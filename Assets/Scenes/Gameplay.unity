@@ -2185,13 +2185,13 @@ MonoBehaviour:
     - {fileID: 717077254968170319, guid: 4b8b3128861339240be89d836f77d239, type: 3}
     spawnInterval: 2
   - waveName: Wave 2
-    noOfEnemies: 5
+    noOfEnemies: 20
     typeOfEnemies:
     - {fileID: 1140042793959729119, guid: 3dc60ec784883c646802740e75bfe475, type: 3}
     - {fileID: 717077254968170319, guid: 4b8b3128861339240be89d836f77d239, type: 3}
     spawnInterval: 1
   - waveName: Final Wave
-    noOfEnemies: 1
+    noOfEnemies: 30
     typeOfEnemies:
     - {fileID: 717077254968170319, guid: 4b8b3128861339240be89d836f77d239, type: 3}
     - {fileID: 1140042793959729119, guid: 3dc60ec784883c646802740e75bfe475, type: 3}
